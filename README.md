@@ -4,7 +4,7 @@ Notes on [An Introduction to Abstract Mathemtics](https://www.amazon.com/Introdu
 View [here](). 
 
 # To Do 
-* Create Site's Bones (yaml and rmarkdown pages)
+* Create table on about page
 * ch 1 notes
 * ch 2 notes
 * ch 3 notes
@@ -16,3 +16,5 @@ View [here]().
 
 # Done
 ☑️ Update Readme
+
+☑️ Create Site's Bones (yaml and rmarkdown pages)
