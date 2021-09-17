@@ -1,7 +1,7 @@
 # About
 Notes on [An Introduction to Abstract Mathemtics](https://www.amazon.com/Introduction-Abstract-Mathematics-Robert-Bond/dp/1577665392) by Robert J Bond, and William J. Keane. 
 
-View [here](). 
+View [here](https://rbolt13.github.io/itam/). 
 
 # To Do 
 * Create table on about page
