@@ -13,11 +13,109 @@ output:
 
 # Statements
 
-* notes
+* math (in a sense) to determine if a statement is true or false
+
+* **axioms** : are given statements that other statements are deduced from
+
+* **propositions** : are deductions made from axioms 
+
+* **theorems** : are propositions that are particularly important 
+
+* **proofs** : are the arguments that use logic to make deductions 
+
+* A **statement** is any declarative sentence that is either true or false. 
+
+* A **variable** is a symbol that stands for an undetermined number. 
+
+* An **open statement** is any declarative sentence containing one or more variables that is not a statement but becomes a statement when the variables are assigned values. 
+
+* A **quantifier** is an expression that indicates the scope (all, some, both)
+
+* $\forall$ is the **universal quantifier** "for all" or "for every".
+
+* $\exists$ is the **existential quantifier** "there is" or "there exists" 
+
+* A quantifier applied to a variable is a **bound variable**
+
+* A variable that is not bound is **free**
+**Example 6** : If _n_ is an even integer, then $n^2$ is even. 
+
+- this is a statement because the quantifier $\forall$ : "For every integer _n_, if _n_ is even, then $n^2$ is even." Making _n_ a bound variable. 
+
+**Example 7** : A triangle has three sides. 
+
+- "For every plane figure _T_, if _T_ is a triangle, then _T_ has three sides."
+
+**Example 8** : The square of a real number is nonnegative. 
+
+- "$\forall x$, if $x$ is a real number, then $x^2\geq 0$." 
+
+**Example 10** : Some even numbers are multiples of 3. 
+
+- "There exists an even integer that is a multiple of 3."
+
+- prove by finding the existence of one such number (like 6)
+
+**Example 11** : Some real numbers are irrational.
+
+- "There exists  a real number _x_ such that _x_ is irrational." 
+
+**Example 14** : A real-valued function $f(x)$ is **bounded** on the closed interval $[a,b]$ if $f(x)$ is defined on $[a,b]$ and $\exists$ a positive real number $M$ such that $|f(x)|\leq M$ $\forall x\in[a,b]$
+
+**Example 15 a** : $\forall$ real numbers $x$, $\exists$ a real number $y\in y^3 =x$. 
+
+- "Every real number has a cube root" (true)
+
+- This is a consequence (result) of the Intermediate Value Theorem (if f is continuous on [a,b] then it takes on any value between f(a) and f(b))
+
+**Example 15 b** : $\exists$ a real number $y\in \forall$ real numbers$x$, $y^3 =x$.
+
+- "For **every** real number x is the cube of a **single** number y" (false)
+
+- there exists a number single number y such that $y^3=x$ is true for all real numbers. (false) 
+
+**<span style="color: red;">Definition 1.1.3</span>** If P is a statement, the **<span style="color: red;">negation</span>** of P, written $\neg P$ (and read "not P"), is the statement "P is false". 
+
+- for statements P or $\neg P$, one is true and one is false. 
+
+- every statement can be negated by adding "it is not true" in front of it (however this neglects what the statement actually means)
+
+**Example 22** P : If _n_ is an even integer, then $n^2$ is even. ; $\neg P$: It is not true that if _n_ is an even integer, then $n^2$ is even. 
+
+OR
+
+P : For all integers _n_, if _n_ is even, then $n^2$ is even.
+
+$\neg P$ : There exists an even interger _n_ such that $n^2$ is odd. 
+
+* if we negate something with an existential quantifier, then a universal quantifier is required. 
+
+_Rule 1_ : the negation of "For all x, P(x)" is "For some x, $\neg P(x)$. 
+
+_Rule 2_ : the negation of "For somex, P(x)" is "For all x, $\neg P(x)$.
+
+* The negation of $\exists x \in \forall y, P(x,y)$ is $\forall x, \exists y\in\neg P(x,y)$
+
+**Example 26** : P: There is a real nuber whose square is negative. 
+
+$\neg P$ : The square of every real number is not negative 
+
+- note that saying "there is a real number whose square is nonnegative" would be incorrect since both P and $\neg P$ could both technically be true. 
+
+**Example 29** : P: There is a continuous real-valued function $f(x)$ such that $f(x)$ is not differentiable at any real number c. 
+
+$\neg P$: For every continuous real-valued function $f(x)$ , there is a real number c such that $f(x)$ is differentiable at c. 
 
 # Compound Statements
 
-* notes
+**<span style="color: red;">Definition 1.2.1</span>** Let _P_ and _Q_ be statements.
+
+1. The **<span style="color: red;">conjunction</span>** of _P_ and _Q_ , written $P\land Q$ (and read "P and Q") is the statement "Both P and Q are true." 
+2. The **<span style="color: red;">disjunction</span>** of _P_ and _Q_, written $P\lor Q$ (and read "P or Q") is the statement "P is true or Q is true". 
+
+* disjunction or the inclusive or
+
+* conjunction : 3 ways to be true, disjunction : 3 ways to be false
 
 # Implications
 

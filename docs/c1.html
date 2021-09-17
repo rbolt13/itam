@@ -299,13 +299,84 @@ $(document).ready(function () {
 <div id="statements" class="section level1">
 <h1>Statements</h1>
 <ul>
-<li>notes</li>
+<li><p>math (in a sense) to determine if a statement is true or false</p></li>
+<li><p><strong>axioms</strong> : are given statements that other statements are deduced from</p></li>
+<li><p><strong>propositions</strong> : are deductions made from axioms</p></li>
+<li><p><strong>theorems</strong> : are propositions that are particularly important</p></li>
+<li><p><strong>proofs</strong> : are the arguments that use logic to make deductions</p></li>
+<li><p>A <strong>statement</strong> is any declarative sentence that is either true or false.</p></li>
+<li><p>A <strong>variable</strong> is a symbol that stands for an undetermined number.</p></li>
+<li><p>An <strong>open statement</strong> is any declarative sentence containing one or more variables that is not a statement but becomes a statement when the variables are assigned values.</p></li>
+<li><p>A <strong>quantifier</strong> is an expression that indicates the scope (all, some, both)</p></li>
+<li><p><span class="math inline">\(\forall\)</span> is the <strong>universal quantifier</strong> “for all” or “for every”.</p></li>
+<li><p><span class="math inline">\(\exists\)</span> is the <strong>existential quantifier</strong> “there is” or “there exists”</p></li>
+<li><p>A quantifier applied to a variable is a <strong>bound variable</strong></p></li>
+<li><p>A variable that is not bound is <strong>free</strong> <strong>Example 6</strong> : If <em>n</em> is an even integer, then <span class="math inline">\(n^2\)</span> is even.</p></li>
+<li><p>this is a statement because the quantifier <span class="math inline">\(\forall\)</span> : “For every integer <em>n</em>, if <em>n</em> is even, then <span class="math inline">\(n^2\)</span> is even.” Making <em>n</em> a bound variable.</p></li>
 </ul>
+<p><strong>Example 7</strong> : A triangle has three sides.</p>
+<ul>
+<li>“For every plane figure <em>T</em>, if <em>T</em> is a triangle, then <em>T</em> has three sides.”</li>
+</ul>
+<p><strong>Example 8</strong> : The square of a real number is nonnegative.</p>
+<ul>
+<li>“<span class="math inline">\(\forall x\)</span>, if <span class="math inline">\(x\)</span> is a real number, then <span class="math inline">\(x^2\geq 0\)</span>.”</li>
+</ul>
+<p><strong>Example 10</strong> : Some even numbers are multiples of 3.</p>
+<ul>
+<li><p>“There exists an even integer that is a multiple of 3.”</p></li>
+<li><p>prove by finding the existence of one such number (like 6)</p></li>
+</ul>
+<p><strong>Example 11</strong> : Some real numbers are irrational.</p>
+<ul>
+<li>“There exists a real number <em>x</em> such that <em>x</em> is irrational.”</li>
+</ul>
+<p><strong>Example 14</strong> : A real-valued function <span class="math inline">\(f(x)\)</span> is <strong>bounded</strong> on the closed interval <span class="math inline">\([a,b]\)</span> if <span class="math inline">\(f(x)\)</span> is defined on <span class="math inline">\([a,b]\)</span> and <span class="math inline">\(\exists\)</span> a positive real number <span class="math inline">\(M\)</span> such that <span class="math inline">\(|f(x)|\leq M\)</span> <span class="math inline">\(\forall x\in[a,b]\)</span></p>
+<p><strong>Example 15 a</strong> : <span class="math inline">\(\forall\)</span> real numbers <span class="math inline">\(x\)</span>, <span class="math inline">\(\exists\)</span> a real number <span class="math inline">\(y\in y^3 =x\)</span>.</p>
+<ul>
+<li><p>“Every real number has a cube root” (true)</p></li>
+<li><p>This is a consequence (result) of the Intermediate Value Theorem (if f is continuous on [a,b] then it takes on any value between f(a) and f(b))</p></li>
+</ul>
+<p><strong>Example 15 b</strong> : <span class="math inline">\(\exists\)</span> a real number <span class="math inline">\(y\in \forall\)</span> real numbers<span class="math inline">\(x\)</span>, <span class="math inline">\(y^3 =x\)</span>.</p>
+<ul>
+<li><p>“For <strong>every</strong> real number x is the cube of a <strong>single</strong> number y” (false)</p></li>
+<li><p>there exists a number single number y such that <span class="math inline">\(y^3=x\)</span> is true for all real numbers. (false)</p></li>
+</ul>
+<p><strong><span style="color: red;">Definition 1.1.3</span></strong> If P is a statement, the <strong><span style="color: red;">negation</span></strong> of P, written <span class="math inline">\(\neg P\)</span> (and read “not P”), is the statement “P is false”.</p>
+<ul>
+<li><p>for statements P or <span class="math inline">\(\neg P\)</span>, one is true and one is false.</p></li>
+<li><p>every statement can be negated by adding “it is not true” in front of it (however this neglects what the statement actually means)</p></li>
+</ul>
+<p><strong>Example 22</strong> P : If <em>n</em> is an even integer, then <span class="math inline">\(n^2\)</span> is even. ; <span class="math inline">\(\neg P\)</span>: It is not true that if <em>n</em> is an even integer, then <span class="math inline">\(n^2\)</span> is even.</p>
+<p>OR</p>
+<p>P : For all integers <em>n</em>, if <em>n</em> is even, then <span class="math inline">\(n^2\)</span> is even.</p>
+<p><span class="math inline">\(\neg P\)</span> : There exists an even interger <em>n</em> such that <span class="math inline">\(n^2\)</span> is odd.</p>
+<ul>
+<li>if we negate something with an existential quantifier, then a universal quantifier is required.</li>
+</ul>
+<p><em>Rule 1</em> : the negation of “For all x, P(x)” is “For some x, <span class="math inline">\(\neg P(x)\)</span>.</p>
+<p><em>Rule 2</em> : the negation of “For somex, P(x)” is “For all x, <span class="math inline">\(\neg P(x)\)</span>.</p>
+<ul>
+<li>The negation of <span class="math inline">\(\exists x \in \forall y, P(x,y)\)</span> is <span class="math inline">\(\forall x, \exists y\in\neg P(x,y)\)</span></li>
+</ul>
+<p><strong>Example 26</strong> : P: There is a real nuber whose square is negative.</p>
+<p><span class="math inline">\(\neg P\)</span> : The square of every real number is not negative</p>
+<ul>
+<li>note that saying “there is a real number whose square is nonnegative” would be incorrect since both P and <span class="math inline">\(\neg P\)</span> could both technically be true.</li>
+</ul>
+<p><strong>Example 29</strong> : P: There is a continuous real-valued function <span class="math inline">\(f(x)\)</span> such that <span class="math inline">\(f(x)\)</span> is not differentiable at any real number c. </p>
+<p><span class="math inline">\(\neg P\)</span>: For every continuous real-valued function <span class="math inline">\(f(x)\)</span> , there is a real number c such that <span class="math inline">\(f(x)\)</span> is differentiable at c. </p>
 </div>
 <div id="compound-statements" class="section level1">
 <h1>Compound Statements</h1>
+<p><strong><span style="color: red;">Definition 1.2.1</span></strong> Let <em>P</em> and <em>Q</em> be statements.</p>
+<ol style="list-style-type: decimal">
+<li>The <strong><span style="color: red;">conjunction</span></strong> of <em>P</em> and <em>Q</em> , written <span class="math inline">\(P\land Q\)</span> (and read “P and Q”) is the statement “Both P and Q are true.”</li>
+<li>The <strong><span style="color: red;">disjunction</span></strong> of <em>P</em> and <em>Q</em>, written <span class="math inline">\(P\lor Q\)</span> (and read “P or Q”) is the statement “P is true or Q is true”.</li>
+</ol>
 <ul>
-<li>notes</li>
+<li><p>disjunction or the inclusive or</p></li>
+<li><p>conjunction : 3 ways to be true, disjunction : 3 ways to be false</p></li>
 </ul>
 </div>
 <div id="implications" class="section level1">
