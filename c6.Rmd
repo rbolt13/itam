@@ -1,0 +1,24 @@
+---
+title: "Infinite Sets"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'c6.html'))})
+output:
+  html_document:
+    toc: true
+    theme: spacelab
+---
+ 
+# Countable Sets 
+
+* notes
+
+# Uncountable Sets, Cantor's Theorem, and the Schroeder-Bernstein Theorem 
+
+* notes
+
+# Collections of Sets 
+
+* notes

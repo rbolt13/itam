@@ -1,0 +1,24 @@
+---
+title: "Polynomials"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'c8.html'))})
+output:
+  html_document:
+    toc: true
+    theme: spacelab
+---
+
+# Polynomials 
+
+* notes
+
+# Unique Factorization 
+
+* notes
+
+# Polynomials **C**, **R**, and **Q**
+
+* notes

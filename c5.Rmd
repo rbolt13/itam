@@ -1,0 +1,37 @@
+---
+title: "The Integers"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'c5.html'))})
+output:
+  html_document:
+    toc: true
+    theme: spacelab
+---
+
+# Axioms and Basic Properties
+
+* notes
+
+# Induction
+
+* notes
+
+# The Division Algorithm and Greatest Common Divisors 
+
+* notes
+
+# Primes and Unique Factorization 
+
+* notes
+
+# Congruences
+
+* notes
+
+# Generalizing a Theorem
+
+* notes
+

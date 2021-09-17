@@ -1,0 +1,24 @@
+---
+title: "Sets"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'c2.html'))})
+output:
+  html_document:
+    toc: true
+    theme: spacelab
+---
+
+# Sets and Subsets
+
+* notes
+
+# Combining Sets
+
+* notes
+
+# Collections of Sets
+
+* notes

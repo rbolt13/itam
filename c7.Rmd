@@ -1,0 +1,24 @@
+---
+title: "The Real and Complex Numbers"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'c7.html'))})
+output:
+  html_document:
+    toc: true
+    theme: spacelab
+---
+
+# Fields 
+
+* notes
+
+# The Real Numbers
+
+* notes
+
+# The Complex Numbers 
+
+* notes
