@@ -113,13 +113,97 @@ $\neg P$: For every continuous real-valued function $f(x)$ , there is a real num
 1. The **<span style="color: red;">conjunction</span>** of _P_ and _Q_ , written $P\land Q$ (and read "P and Q") is the statement "Both P and Q are true." 
 2. The **<span style="color: red;">disjunction</span>** of _P_ and _Q_, written $P\lor Q$ (and read "P or Q") is the statement "P is true or Q is true". 
 
-* disjunction or the inclusive or
+* disjunction or "the inclusive or"
 
-* conjunction : 3 ways to be true, disjunction : 3 ways to be false
+* conjunction : 3 ways to be false, disjunction : 3 ways to be true
+
+* think of P and Q as variables for (T/F) statements
+
+* **statement forms** are $P\land Q$, $P\lor Q$, $\neg P$, and so on 
+
+* use truth tables where the statement columns are of all combinations 
+
+* notice for $P\land Q$, that $\neg (P\land Q)$, and $(\neg P) \lor (\neg Q)$ are the same thing by the truth table below
+
+<center>
+![](img/t1.jpg)
+</center>
+
+**Example 9** 
+
+P: Everyday this week was sunny or hot
+
+* $\forall$ days this week $P \lor Q$ letting this P be for when it is sunny and Q for when it is hot. 
+
+$\neg P$ : Some day this week was not sunny and not hot 
+
+* $\exists$ days this week that were $(\neg P) \land (\neg Q)$
+
+**Example 10**
+
+P : There is a real number x such that $x>4$ and $x<10$
+
+* $\exists x \in \mathbb{R}$ such that $P \land Q$, letting this P be the statement $x>4$ and Q be the statement $x<10$
+
+$\neg P$ : If x is a real number, then $(\neg P) \lor (\neg Q)$
+
+**Example 11** 
+
+P : Every multiple of 6 is even and is not a multiple of 4. 
+
+* $\forall x, ((\neg S(x)) \land (\neg T(x))$ where $S(x)=6n$ is odd and $T(x)=6n$ is a multiple of 4. 
+
+$\neg P$ : There is a multiple of 6 that is odd or is a multiple of 4. 
+
+* $\exists x \in (S(x)\lor T(x))$.
+
+**Example 12** : There was a day this week that was sunny or hot
+
+* is logically equivalent to the statement : There was a day this week that was sunny or there was a day this week that was hot. 
+
+**Example 13** : here is a real number x such that $x>2$ or $x<5$
+
+* is logically equivalent to the statement : There is a real number x such that $x>2$ or there is a real number x such that $x<5$.
+
+**Example 14** : According to today's weather forecast, tomorrow will be cold and cloudy or cold and rainy. 
+
+Let P, Q, and R be the statements
+
+P : Tomorrow will be cold.
+
+Q : Tomorrow will be cloudy.
+
+R : Tomorrow will be rainy. 
+
+$\Leftrightarrow$ According to today's weather forecast, $(P\lor Q)\land (P\lor R)$.
+
+$\Leftrightarrow$ According to today's weather forecast, tomorrow will be cold and it will be cloudy or rainy. 
+
+$\Leftrightarrow$ According to todays's weather forecast, $P\land (Q\lor R)$. 
+
+* A statement form that is always true is called a **tautology**.
+
+* A statement that is always flase is called a **contradiction**
+
+* If S is a tautology then $\neg S$ is a contradiction. Likewise, if S is a contradiction then $neg S$ is a tautology 
+
+* A consequence of the Archimedes Principle ($\forall x\in \mathbb{R} \exists$ an integer _n_ such that $n>x$) is that there are no "largest" real number
 
 # Implications
 
-* notes
+* the "if-then" part of a statement is called an **implication**
+
+* the "if" part gives the **premise** or the **assumption**
+
+**<span style="color: red;">Definition 1.3.1</span>** : Let P and Q be statements. The **<span style="color: red;">implication</span>** $P\Rightarrow Q$ (read "P implies Q") is the statement "If P is true, then Q is true". 
+
+**Example 1**
+
+P : $3+2=5$
+
+Q : $3+1+1=5$
+
+$P\Rightarrow Q$ : If $3+2=5$, then $3+1+1=5$
 
 # Contrapositive and Converse 
 
