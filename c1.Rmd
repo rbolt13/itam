@@ -205,6 +205,8 @@ Q : $3+1+1=5$
 
 $P\Rightarrow Q$ : If $3+2=5$, then $3+1+1=5$
 
+**Example 5**
+
 # Contrapositive and Converse 
 
 * notes

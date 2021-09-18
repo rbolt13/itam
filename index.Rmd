@@ -11,4 +11,4 @@ output:
     theme: spacelab
 ---
 
-Breif notes on An Introduction to Abstract Mathemtics by Robert J Bond, and William J. Keane. 
+Brief notes on An Introduction to Abstract Mathemtics by Robert J Bond, and William J. Keane. 
