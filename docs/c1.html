@@ -505,8 +505,51 @@ $(document).ready(function () {
 <div id="contrapositive-and-converse" class="section level1">
 <h1>Contrapositive and Converse</h1>
 <ul>
-<li>notes</li>
+<li>an alternate way of proving <span class="math inline">\(P\Rightarrow Q\)</span> is to verify <span class="math inline">\(\neg Q \Rightarrow \neg P\)</span> , meaning to prove if Q is false then P is false.</li>
 </ul>
+<p><strong>Example 1</strong> Let P be “Aurora lives in Boston” and Q be “Aurora lives in Massachusetts”.</p>
+<ul>
+<li><p><span class="math inline">\(P\Rightarrow Q\)</span></p></li>
+<li><p><span class="math inline">\(\neg Q \Rightarrow \neg P\)</span> : If Aurora does not live in Bosten then they do not live in Massachusetts.</p></li>
+</ul>
+<p><strong><span style="color: red;">Definition 1.4.1</span></strong> : The statement <span class="math inline">\(\neg Q \Rightarrow \neg P\)</span> is called the <strong><span style="color: red;">contrapositive</span></strong> of the statement <span class="math inline">\(P\Rightarrow Q\)</span>.</p>
+<p><strong>Example 2</strong> Implication : If it rained today, then the game was canceled.</p>
+<p>Contrapositive : If the game was not cancelled, then it did not rain today.</p>
+<p><strong>Example 4</strong> Prove that if <em>n</em> is an integer and <span class="math inline">\(n^2\)</span> is even, then <em>n</em> is an even integer.</p>
+<ul>
+<li><p>To prove directly write <span class="math inline">\(n^2=2t\)</span> for some integer t. This gives us <span class="math inline">\(n=\sqrt{2t}\)</span> which doesn’t tell us much.</p></li>
+<li><p>proving the contrapositive : “if_n_ is odd, then <span class="math inline">\(n^2\)</span> is odd.”</p></li>
+</ul>
+<p>Write <span class="math inline">\(n=2t+1\)</span>, and square both sides giving</p>
+<p><span class="math inline">\(n^{2} =(2t+1)^{2}=4t^{2}+4t+1=2(2t^{2}+2t)+1\)</span></p>
+<p>Thus because <span class="math inline">\((2t^{2}+2t)\)</span> is an integer, it follows that <span class="math inline">\(n^{2}\)</span> is odd. QED.</p>
+<hr />
+<p><strong><span style="color: red;">Definition 1.4.2</span></strong> : The statement <span class="math inline">\(Q \Rightarrow P\)</span> is called the <strong><span style="color: red;">converse</span></strong> of the statement <span class="math inline">\(P\Rightarrow Q\)</span>.</p>
+<p><strong>Example 5</strong> Implication : If it rained today, then the game was canceled.</p>
+<p>Converse : If the game was canceled, then it rained today.</p>
+<ul>
+<li>an implication and its converse are NOT necessarily logically equivalent. Meaning the game could have been canceled for a reason other than rain.</li>
+</ul>
+<p><strong><span style="color: red;">Definition 1.4.3</span></strong> : Let <em>P</em> and <em>Q</em> be statements. The statement <span class="math inline">\(P \Leftrightarrow Q\)</span> (or P iff Q, read P if and only if Q) is the statement <span class="math inline">\((P\Rightarrow Q)\land (Q\Rightarrow P)\)</span>. The symbol <span class="math inline">\(\Leftrightarrow\)</span> is called the <strong><span style="color: red;">biconditional</span></strong>.</p>
+<p><strong><span style="color: blue;">Theorem 1.4.4</span></strong> : Let <em>n</em> be an integer. Then <em>n</em> is even if and only if <span class="math inline">\(n^{2}\)</span> is even.</p>
+<p><strong><span style="color: blue;">Theorem 1.4.5</span></strong> : Let <em>n</em> be an integer.Then the following are equivalent statements: 1. <em>n</em> is even. 2. <span class="math inline">\(n^{2}\)</span> is even.</p>
+<ul>
+<li>note that proving equivalence requires two proofs</li>
+</ul>
+<p><strong><span style="color: blue;">Theorem 1.4.6</span></strong> : Let <em>n</em> be an integer. Then <em>n</em> is odd if and only if <span class="math inline">\(n^{2}\)</span> is odd.</p>
+<hr />
+<ul>
+<li>P and <span class="math inline">\(\neg P\)</span> cannot both be true, otherwise there would be a contradiction. This is often called <strong>proof by contradiction</strong>.</li>
+</ul>
+<p><strong><span style="color: blue;">Theorem 1.4.7</span></strong> : Let S be a statement and C be a false statement. Then the statment <span class="math inline">\(\neg S \Rightarrow C\)</span> is logically equivalent to S.</p>
+<p><strong>Example 8</strong> Prove that there are no integers x and y such that <span class="math inline">\(x^{2}=4y+2\)</span></p>
+<ul>
+<li>Rewritten : <span class="math inline">\(\forall\)</span> integers x and y, <span class="math inline">\(x^{2}\ne 4y+2\)</span></li>
+</ul>
+<p>Assume that the statement above is false, meaning <span class="math inline">\(\exists\)</span> integers x and y, <span class="math inline">\(x^{2}= 4y+2\)</span></p>
+<p>Since <span class="math inline">\(x^{2}= 4y+2=2(2y+1)\)</span> is even, by Theorem 1.4.4 x can be rewritten as <span class="math inline">\(x=2n\)</span>, making <span class="math inline">\(x^{2}=4n^{2}=4y+2\)</span>.</p>
+<p><span class="math inline">\(\Rightarrow 4(n^{2}-y)=2\)</span> or <span class="math inline">\(n^{2}-y=\frac{1}{2}\)</span>.</p>
+<p>Since <span class="math inline">\(\frac{1}{2}\)</span> is not an integer, the false assumption of the above statement lead to a false statement, therefore the above statement must be true by way of contradiction. QED.</p>
 </div>
 
 

@@ -294,4 +294,75 @@ Let x be a real number. Let P be the statement "$x>5$" and Q be the statement "$
 
 # Contrapositive and Converse 
 
-* notes
+* an alternate way of proving $P\Rightarrow Q$ is to verify $\neg Q \Rightarrow \neg P$ , meaning to prove if Q is false then P is false. 
+
+**Example 1**
+Let P be "Aurora lives in Boston" and Q be "Aurora lives in Massachusetts". 
+
+* $P\Rightarrow Q$
+
+* $\neg Q \Rightarrow \neg P$ : If Aurora does not live in Bosten then they do not live in Massachusetts. 
+
+**<span style="color: red;">Definition 1.4.1</span>** : The statement $\neg Q \Rightarrow \neg P$ is called the  **<span style="color: red;">contrapositive</span>** of the statement $P\Rightarrow Q$. 
+
+**Example 2**
+Implication : If it rained today, then the game was canceled.
+
+Contrapositive : If the game was not cancelled, then it did not rain today. 
+
+**Example 4** 
+Prove that if _n_ is an integer and $n^2$ is even, then _n_ is an even integer. 
+
+* To prove directly write $n^2=2t$ for some integer t. This gives us $n=\sqrt{2t}$ which doesn't tell us much. 
+
+* proving the contrapositive : "if_n_ is odd, then $n^2$ is odd." 
+
+Write $n=2t+1$, and square both sides giving 
+
+$n^{2} =(2t+1)^{2}=4t^{2}+4t+1=2(2t^{2}+2t)+1$
+
+Thus because $(2t^{2}+2t)$ is an integer, it follows that $n^{2}$ is odd. QED. 
+ 
+---
+
+**<span style="color: red;">Definition 1.4.2</span>** : The statement $Q \Rightarrow P$ is called the  **<span style="color: red;">converse</span>** of the statement $P\Rightarrow Q$.
+
+**Example 5**
+Implication : If it rained today, then the game was canceled.
+
+Converse : If the game was canceled, then it rained today. 
+
+* an implication and its converse are NOT necessarily logically equivalent. Meaning the game could have been canceled for a reason other than rain. 
+
+**<span style="color: red;">Definition 1.4.3</span>** : Let _P_ and _Q_ be statements. The statement $P \Leftrightarrow Q$ (or P iff Q, read P if and only if Q) is the statement $(P\Rightarrow Q)\land (Q\Rightarrow P)$. The symbol $\Leftrightarrow$ is called the **<span style="color: red;">biconditional</span>**.
+
+**<span style="color: blue;">Theorem 1.4.4</span>** : Let _n_ be an integer. Then _n_ is even if and only if $n^{2}$ is even. 
+
+**<span style="color: blue;">Theorem 1.4.5</span>** : Let _n_ be an integer.Then the following are equivalent statements:
+1. _n_ is even.
+2. $n^{2}$ is even. 
+
+* note that proving equivalence requires two proofs
+
+**<span style="color: blue;">Theorem 1.4.6</span>** : Let _n_ be an integer. Then _n_ is odd if and only if $n^{2}$ is odd. 
+
+--- 
+
+* P and $\neg P$ cannot both be true, otherwise there would be a contradiction. This is often called **proof by contradiction**. 
+
+**<span style="color: blue;">Theorem 1.4.7</span>** : Let S be a statement and C be a false statement. Then the statment $\neg S \Rightarrow C$ is logically equivalent to S. 
+
+**Example 8**
+Prove that there are no integers x and y such that $x^{2}=4y+2$
+
+* Rewritten :  $\forall$ integers x and y, $x^{2}\ne 4y+2$
+
+Assume that the statement above is false, meaning $\exists$ integers x and y, $x^{2}= 4y+2$
+
+Since $x^{2}= 4y+2=2(2y+1)$ is even, by Theorem 1.4.4 x can be rewritten as $x=2n$, making $x^{2}=4n^{2}=4y+2$. 
+
+$\Rightarrow 4(n^{2}-y)=2$ or $n^{2}-y=\frac{1}{2}$.
+
+Since $\frac{1}{2}$ is not an integer, the false assumption of the above statement lead to a false statement, therefore the above statement must be true by way of contradiction. QED. 
+
+
