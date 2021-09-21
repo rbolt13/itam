@@ -425,6 +425,7 @@ $(document).ready(function () {
 <p><span class="math inline">\(\Leftrightarrow\)</span> According to today’s weather forecast, <span class="math inline">\((P\lor Q)\land (P\lor R)\)</span>.</p>
 <p><span class="math inline">\(\Leftrightarrow\)</span> According to today’s weather forecast, tomorrow will be cold and it will be cloudy or rainy.</p>
 <p><span class="math inline">\(\Leftrightarrow\)</span> According to todays’s weather forecast, <span class="math inline">\(P\land (Q\lor R)\)</span>.</p>
+<hr />
 <ul>
 <li><p>A statement form that is always true is called a <strong>tautology</strong>.</p></li>
 <li><p>A statement that is always flase is called a <strong>contradiction</strong></p></li>
@@ -443,6 +444,63 @@ $(document).ready(function () {
 <p>P : <span class="math inline">\(3+2=5\)</span></p>
 <p>Q : <span class="math inline">\(3+1+1=5\)</span></p>
 <p><span class="math inline">\(P\Rightarrow Q\)</span> : If <span class="math inline">\(3+2=5\)</span>, then <span class="math inline">\(3+1+1=5\)</span></p>
+<p><strong>Example 5</strong></p>
+<p>P : Gerald Ford was vice President under Jimmy Carter.</p>
+<p>Q : 2 &lt; 7</p>
+<ul>
+<li>P is false and Q is true so <span class="math inline">\(P\Rightarrow Q\)</span> is true. False statements imply anything.</li>
+</ul>
+<p><strong>Example 8</strong></p>
+<p>P : The function <span class="math inline">\(f(x)=x^{2}\)</span> is differentiable at 0.</p>
+<p>Q : The function <span class="math inline">\(f(x)=x^{2}\)</span> is continuous at 0.</p>
+<ul>
+<li><span class="math inline">\(P\Rightarrow Q\)</span> is true. Note there is also causality here since a theorem in calc. shows that differentiability implies continuity.</li>
+</ul>
+<p><strong>Example 9</strong></p>
+<p>P : The function <span class="math inline">\(f(x)=x^{2}\)</span> is continuous at 0.</p>
+<p>Q : The function <span class="math inline">\(f(x)=x^{2}\)</span> is differentiable at 0.</p>
+<ul>
+<li><span class="math inline">\(P\Rightarrow Q\)</span> is true. There is no causality but the implication is true because both P and Q are true.</li>
+</ul>
+<hr />
+<ul>
+<li>when <span class="math inline">\(x\)</span> is assigned <span class="math inline">\(a\)</span> value a then <span class="math inline">\(P(a)\)</span> is called the <strong>hypothesis</strong> and <span class="math inline">\(Q(a)\)</span> is called the <strong>conclusion</strong>.</li>
+</ul>
+<p><strong>Example 11</strong> Prove or disprove S : “If <em>n</em> and <em>m</em> are odd integers, then <em>n + m</em> must be even.”</p>
+<p>Reworded : “For all integers <em>n</em> and <em>m</em>, <span class="math inline">\(P\Rightarrow Q\)</span></p>
+<p>Where P is the open sentence “n and m are odd integers” and Q is the open sentence “n+m is even”.</p>
+<p>Proof :</p>
+<p>Let <em>n</em> and <em>m</em> be odd integers.</p>
+<p>This means we can rewrite <em>n</em> as <span class="math inline">\(2t+1\)</span> and <em>m</em> as <span class="math inline">\(2s+1\)</span>. Where <em>t</em> and <em>s</em> are integers.</p>
+<p>Thus , <span class="math inline">\(n+m=(2t+1)+(2s+1)=2t+2s+2=2(t+s+1)\)</span></p>
+<p>Since <span class="math inline">\(t+s+1\)</span> is an integer, <span class="math inline">\(n+m\)</span> is even.</p>
+<p>QED.</p>
+<hr />
+<ul>
+<li><p>a <strong>counterexample</strong> serves to disprove a statement with a universal quantifier, and is also the variable assigned to x that makes P(x) true and Q(x) false.</p></li>
+<li><p><span class="math inline">\(\neg (P\Rightarrow Q)\)</span> is logically equivalent to <span class="math inline">\(P \land \neg Q\)</span></p></li>
+<li><p><span class="math inline">\(P \land \neg Q\)</span> : P is true and Q is false</p></li>
+</ul>
+<p><strong>Example 13</strong> Consider the statement : “The sum of two perfect square is perfect.”</p>
+<ul>
+<li><p><span class="math inline">\(\forall\)</span> integers <em>n</em>, <em>m</em>, <span class="math inline">\(P\Rightarrow Q\)</span> where P is <em>n</em> and <em>m</em> are perfect squares, and Q is the open sentence that <span class="math inline">\(n+m\)</span> is a perfect square.</p></li>
+<li><p>The negation of this statment would be : <span class="math inline">\(\exists\)</span> integers <em>n</em>, <em>m</em>, such that <span class="math inline">\(P \land \neg Q\)</span></p></li>
+<li><p>“There exists integers <em>n</em> and <em>m</em> such that <em>n</em> and <em>m</em> are perfect squares but <span class="math inline">\(n+m\)</span> is not a perfect square.”</p></li>
+<li><p>counterexample : <span class="math inline">\(4+9=13\)</span>, 13 is not a perfect square.</p></li>
+<li><p>use a counterexample to disprove a statement with a universal quantifier.</p></li>
+</ul>
+<hr />
+<ul>
+<li><p>P is a <strong>sufficient condition</strong>, meaning in order fot <em>Q</em> to be true, it is <em>sufficient</em> that <em>P</em> be true.</p></li>
+<li><p>Q is a <strong>necessary condition</strong>, meaning that <em>Q must</em> be true in order for <em>P</em> to be true.</p></li>
+<li><p>In other words, if Q is false, then P is false. <span class="math inline">\(\neg Q \Rightarrow \neg P\)</span></p></li>
+<li><p>note that even if Q is true, P may be false.</p></li>
+</ul>
+<p><strong>Example 14</strong> Let x be a real number. Let P be the statement “<span class="math inline">\(x&gt;5\)</span>” and Q be the statement “<span class="math inline">\(x&gt;0\)</span>”</p>
+<ul>
+<li><p>P is sufficient but not necessary</p></li>
+<li><p>Q is a necessary condition but not sufficient</p></li>
+</ul>
 </div>
 <div id="contrapositive-and-converse" class="section level1">
 <h1>Contrapositive and Converse</h1>

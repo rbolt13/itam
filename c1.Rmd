@@ -181,6 +181,8 @@ $\Leftrightarrow$ According to today's weather forecast, tomorrow will be cold a
 
 $\Leftrightarrow$ According to todays's weather forecast, $P\land (Q\lor R)$. 
 
+---
+
 * A statement form that is always true is called a **tautology**.
 
 * A statement that is always flase is called a **contradiction**
@@ -206,6 +208,89 @@ Q : $3+1+1=5$
 $P\Rightarrow Q$ : If $3+2=5$, then $3+1+1=5$
 
 **Example 5**
+
+P : Gerald Ford was vice President under Jimmy Carter. 
+
+Q : 2 < 7
+
+* P is false and Q is true so $P\Rightarrow Q$ is true. False statements imply anything. 
+
+**Example 8**
+
+P : The function $f(x)=x^{2}$ is differentiable at 0. 
+
+Q : The function $f(x)=x^{2}$ is continuous at 0. 
+
+* $P\Rightarrow Q$ is true. Note there is also causality here since a theorem in calc. shows that differentiability implies continuity.
+
+**Example 9**
+
+P : The function $f(x)=x^{2}$ is continuous at 0. 
+
+Q : The function $f(x)=x^{2}$ is differentiable at 0. 
+
+* $P\Rightarrow Q$ is true. There is no causality but the implication is true because both P and Q are true. 
+
+---
+
+* when $x$ is assigned $a$ value a then $P(a)$ is called the **hypothesis** and $Q(a)$ is called the **conclusion**. 
+
+**Example 11**
+Prove or disprove S : "If _n_ and _m_ are odd integers, then _n + m_ must be even."
+
+Reworded : "For all integers _n_ and _m_, $P\Rightarrow Q$
+
+Where P is the open sentence "n and m are odd integers" and Q is the open sentence "n+m is even". 
+
+Proof : 
+
+Let _n_ and _m_ be odd integers. 
+
+This means we can rewrite _n_ as $2t+1$ and _m_ as $2s+1$. Where _t_ and _s_ are integers. 
+
+Thus , $n+m=(2t+1)+(2s+1)=2t+2s+2=2(t+s+1)$
+
+Since $t+s+1$ is an integer, $n+m$ is even. 
+
+QED. 
+
+---
+
+* a **counterexample** serves to disprove a statement with a universal quantifier, and is also the variable assigned to x that makes P(x) true and Q(x) false.  
+
+* $\neg (P\Rightarrow Q)$ is logically equivalent to $P \land \neg Q$
+
+* $P \land \neg Q$ : P is true and Q is false 
+
+**Example 13**
+Consider the statement : "The sum of two perfect square is perfect."
+
+* $\forall$ integers _n_, _m_, $P\Rightarrow Q$ where P is _n_ and _m_ are perfect squares, and Q is the open sentence that $n+m$ is a perfect square. 
+
+* The negation of this statment would be : $\exists$ integers _n_, _m_, such that $P \land \neg Q$
+
+* "There exists integers _n_ and _m_ such that _n_ and _m_ are perfect squares but $n+m$ is not a perfect square." 
+
+* counterexample : $4+9=13$, 13 is not a perfect square. 
+
+* use a counterexample to disprove a statement with a universal quantifier. 
+
+---
+
+* P is a **sufficient condition**, meaning in order fot _Q_ to be true, it is _sufficient_ that _P_ be true. 
+
+* Q is a **necessary condition**, meaning that _Q must_ be true in order for _P_ to be true. 
+
+* In other words, if Q is false, then P is false. $\neg Q \Rightarrow \neg P$
+
+* note that even if Q is true, P may be false. 
+
+**Example 14** 
+Let x be a real number. Let P be the statement "$x>5$" and Q be the statement "$x>0$"
+
+* P is sufficient but not necessary 
+
+* Q is a necessary condition but not sufficient 
 
 # Contrapositive and Converse 
 
