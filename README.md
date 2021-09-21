@@ -4,8 +4,6 @@ Notes on [An Introduction to Abstract Mathematics](https://www.amazon.com/Introd
 View [here](https://rbolt13.github.io/itam/). 
 
 # To Do 
-* Create table on about page
-* ch 1 notes
 * ch 2 notes
 * ch 3 notes
 * ch 4 notes
@@ -13,8 +11,11 @@ View [here](https://rbolt13.github.io/itam/).
 * ch 6 notes
 * ch 7 notes
 * ch 8 notes
+* chapter exercises 
 
 # Done
 ☑️ Update Readme
 
 ☑️ Create Site's Bones (yaml and rmarkdown pages)
+
+☑️ ch 1 notes
